@@ -1,0 +1,7 @@
+@mixin tamanioFoto($alto, $ancho) {
+    width: $ancho;
+    height: $alto;
+}
+.diametro {
+    @include tamanioFoto(250px, 250px);
+}

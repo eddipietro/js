@@ -1,0 +1,54 @@
+/*TABLET*/
+
+ @media (min-width: 481px) and (max-width: 1023px){
+
+  main {
+    margin-top: 150px;
+  }
+  #tituloPrincipal {
+    font-size: 23px;
+    margin: 17px 0px;
+  }
+  #videoPrincipal {
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    height: 400px;
+  }
+  #contenedorRegiones {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  
+  #map {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  width: 90%;
+  height: 300px;
+  border-radius: 50px;
+  
+  }
+  div {
+
+    .columnaVideo {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+    }
+
+  }
+  #video {
+  border-radius: 50px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  width: 90%;
+  height:100px;
+  margin-bottom: 5%;
+
+  } 
+
+}

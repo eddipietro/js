@@ -1,0 +1,126 @@
+ /*********
+  IMPORTS
+ ***********/
+ @import "./imputs";
+ @import "./botones";
+ @import "./mixin";
+ @import "./maps";
+ @import "./_mediatablet";
+ @import "./_mediasmartphone";
+ @import "./nav";
+ @import "./footer";
+ @import "./id";
+
+
+
+* {
+  margin: 0%;
+  padding: 0%;
+}
+body{
+  width: 100%;
+  background-color: #e7eff9;
+  background-image: linear-gradient(to top, #e7eff9 0%, #cfd6e6 74%);
+  
+  main {
+    #videoPrincipal {
+      margin: 0px;
+      padding: 0px;
+      width: 100%;
+      height: 550px;
+      border-radius: 50px;
+    }
+    h1 {
+      margin-top: 10%;
+      margin-left: 5%;
+      color: azure;
+      font-size: 30px;
+      justify-content: center;
+      text-shadow:  0 1px #000,
+      -1px -1px 0 #000,  
+      1px -1px 0 #000,
+      -1px 1px 0 #000,
+      1px 1px 0 #000;
+    }
+    h2 {
+    @extend h1 ;
+    display: block;
+    margin-top: 60px;
+    margin-bottom: 30px;
+    font-size: 35px;
+    padding: 10px;
+    background-color: #04619f;
+    background-image: linear-gradient(147deg, #000000 0%, #04619f 0%);
+    color: azure;
+  
+  }
+  
+
+  .carrousel {
+    width: 100%;
+    height: 700px;
+  }
+  .diametro {
+    margin: 50px;
+  }
+  
+  .transicion {
+    transition: all 0.4s;
+    margin-bottom: 5%;
+  }
+  
+  .transicion:hover {
+    box-shadow: 11px 11px 12px black;
+  }
+
+.contenedorRegiones{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.redes {
+  box-shadow: 10px 5px 5px black;
+  border-radius: 50%;
+}
+.nosotros {
+  font-size: 20px;
+}
+.descripcionProvincias {
+  color: #000000;
+  margin: 2%
+}
+
+  }
+}
+
+
+
+main {
+  h2 {
+    @extend h1 ;
+    display: block;
+    margin-top: 60px;
+    margin-bottom: 30px;
+    font-size: 50px;
+    padding: 10px;
+    background-image: linear-gradient(to top, #380036 0%, #0cbaba 95%);
+    color: azure;
+  
+  }
+  }
+  
+  /*comentario*/
+  p {
+    font-size: 20px;
+  }
+
+#subir {
+  margin-left: auto;
+}
+
+
+
+
+
+
+

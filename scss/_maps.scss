@@ -1,0 +1,19 @@
+$palabras:(
+    tamanio: 30px,
+    color: #000000,
+    espacio: 5%, 
+);
+
+
+.persona {
+    font-size: map-get($map: $palabras, $key: tamanio);
+    color: map-get($map: $palabras, $key: color);
+    margin-top: map-get($map: $palabras, $key: espacio);
+    
+}
+
+
+.enviar {
+    margin-top: map-get($map: $palabras, $key: espacio);
+}
+
