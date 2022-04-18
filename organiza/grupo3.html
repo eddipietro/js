@@ -54,23 +54,26 @@
   <h1 class="animate__animated animate__pulse">Los Mejores destinos se encuentran en Argentina</h1>
   
   <section class="container-fluid" >
-    <h2 class="animate__animated animate__fadeInLeftBig">1 PERSONA</h2>
-    <h3 class="persona">Elegir Días <img src="https://img.icons8.com/small/32/000000/calendar-27.png"/></h3>
-    <select class="imput" name="dias"  >
-      <option value="Micro">Fin de Semana</option>
-      <option value="Tren">1 Semana</option>
-      <option value="Avion">15 Días</option>
-      <option value="Avion">1 Mes</option>
+    <h2 class="animate__animated animate__fadeInLeftBig">3 PERSONA O MÁS</h2>
+    <h3 class="persona" id="elegirDias">Elegir Días <img src="https://img.icons8.com/small/32/000000/calendar-27.png"/></h3>
+    <select class="imput" name="dias" id="botonDias"  >
+      <option value="Elija Cantidad de Dias">Elija La Cantidad de Días</option>
+      <option value="Fin De Semana">Fin de Semana</option>
+      <option value="1 Semana">1 Semana</option>
+      <option value="15 Dias">15 Días</option>
+      <option value="1 Mes">1 Mes</option>
     </select>
     <button type="button" class="btn btn-outline-light me-2"> Agregar Días<img src="https://img.icons8.com/small/32/000000/add.png"/></button> 
-    <h3 class="persona ">Elegir Transporte <img src="https://img.icons8.com/small/32/000000/airplane-take-off.png"/></h3>
-    <select class="imput" name="transporte" >
+    <h3 class="persona " id="elegirTradnsporte">Elegir Transporte <img src="https://img.icons8.com/small/32/000000/airplane-take-off.png"/></h3>
+    <select class="imput" name="transporte" id="botonTransporte" >
+      <option value="Elija Transporte">Elija Transporte</option>
       <option value="Micro">Micro</option>
       <option value="Tren">Tren</option>
       <option value="Avion">Avion</option>
     </select>
-    <h3 class="persona">Salida <img src="https://img.icons8.com/ios/32/000000/passenger-with-baggage.png"/></h3>
-    <select class="imput"  name="salida" >
+    <h3 class="persona" id="elegirSalida" >Salida <img src="https://img.icons8.com/ios/32/000000/passenger-with-baggage.png"/></h3>
+    <select class="imput"  name="salida"  id="botonSalida">
+      <option value="Elija Salida">Elija Salida</option>
       <option class="fondito" value="Ciudad de Buenos Aires">Ciudad de Buenos Aires</option>
       <option value="Catamarca">Catamarca</option>
       <option value="Chaco">Chaco</option>
@@ -94,8 +97,9 @@
       <option value="Tierra del Fuego">Tierra del Fuego</option>
       <option value="Tucumán">Tucumán</option>
     </select>
-    <h3 class="persona">Destinos <img src="https://img.icons8.com/ios/32/000000/sunbathe.png"/></h3>
-    <select class="imput" name="destinos" >
+    <h3 class="persona" id="elegirDestino">Destinos <img src="https://img.icons8.com/ios/32/000000/sunbathe.png"/></h3>
+    <select class="imput" name="destinos" id="botonDestino">
+      <option value="Elija Destino">Elija Destino</option>
       <option value="Ciudad de Buenos Aires">Ciudad de Buenos Aires</option>
       <option value="Catamarca">Catamarca</option>
       <option value="Chaco">Chaco</option>
@@ -121,15 +125,13 @@
     </select>
     
     <div>
-    <input class="btn btn-outline-light me-2 enviar" type="submit" value="Enviar">
-    </div>
+      <input class="btn btn-outline-light me-2 enviar" type="submit" value="Enviar" id="btn">    </div>
   
   
   
-        
-        
-          <h3 class="persona">Las opciones de viajes que le recomendamos nosotros segun sus filtros</h3>
-      </main>
+    <h3 class="persona">Las opciones de viajes que le recomendamos nosotros segun sus filtros</h3>
+    </section>
+</main>
       
       <!--FOOTER-->
         <footer class="py-3 my-4" >
@@ -148,7 +150,7 @@
       
 
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-      <script src="main.js"></script>
+      <script src="../organiza_tuviaje.js"></script>
     </body>
 
 </html>
