@@ -6,7 +6,7 @@ const elegirDias = document.querySelector("#elegirDias");
 //LOGICA - onchange, input 
 // ELEGIR DIAS
 
-elegirDias.onchange = ()=>{}
+elegirDias.onchange = () => { }
 elegirDias.addEventListener("change",()=>{
    console.log(`el valor cambio a ${elegirDias.value}`);
  })
@@ -59,7 +59,7 @@ elegirDias.addEventListener("change",()=>{
 
     //ENVIAR
     const boton = document.querySelector("#btn");
-    
+
     boton.onclick = (e)=>{
     e.preventDefault();
     console.log("hice submit");

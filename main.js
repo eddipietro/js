@@ -150,7 +150,7 @@ console.log(buscarDias);
 //querySelector
 //AGREGAR UNA FUNCION QUE INCORPORE EL DOM Y LOS OBJETOS AL HTML AGREGANDOLE INNET Y VALUE
 
-document.querySelectorsAll(".imput") ;
+//document.querySelectorsAll(".imput") ;
 
 //////////////////////////////////////////
 
