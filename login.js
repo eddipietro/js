@@ -1,4 +1,3 @@
-//MENU >>>> INICIAR.HTML
 let usuario = prompt("Ingrese su Email");
 let contraseña = prompt("Ingrese su Contraseña");
 let usuariosAptos = "erikadipietro7@gmail.com";
