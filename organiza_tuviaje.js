@@ -117,3 +117,27 @@ const guardarProducto = () => {
   listaProvincias.push(provincia);
 }
 
+localStorage.setItem("provincias", JSON.stringify(listaProvincias) );
+
+
+/*
+// USANDO FILTER TRATAR DE USAR FILTRO DE LAS ESPECIFICACIONES DEL USUARIO
+function filtroViaje(salida, dias) {
+  return salida.filter(objeto => objeto.edad == parseInt(dias));
+}
+function listaJugadores(jugadores) {
+  let lista = '';
+  for (const jugador of jugadores) {
+      lista += 'JUGADOR ' + jugador.nombre + ' CAMISETA ' + jugador.camiseta + ' EDAD ' + jugador.edad + '\n'
+  }
+  return lista;
+}
+for (let index = 0; index < 5; index++) {
+  let filtro = filtroViaje(jugadores, prompt('INGRESAR NOMBRE DE JUGADOR'));
+  if (filtro.length > 0) {
+      alert(listaJugadores(filtro));
+  } else {
+      alert('NO EXISTE JUGADORES CON ESA EDAD');
+  }
+}
+*/
