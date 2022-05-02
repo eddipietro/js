@@ -1,5 +1,5 @@
 
-
+//LIBRERÍA JQUERY usando a modo de dom  con el id= input-search lupa buscadora
 let buscadora = $("#table").DataTable();
 
 $("#input-search").keyup(function(){
