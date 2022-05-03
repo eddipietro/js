@@ -32,12 +32,58 @@ elegirDias.addEventListener("change",()=>{
  
 
 //Boton de Agregar Días que no esta terminado
+const botonAgregar = document.querySelector("#agregoDia");
+
+botonAgregar.onclick = (e)=>{
+  
+swal({
+  title: "Muy Bien!",
+  text: "Has agregado un día más a tu itinerario!",
+  icon: "success",
+});
+}
+
+
+/* ACA INTENTO HACER EL RECORRIDO CON FOR 
+PARA QUE A LA CANTIDAD DE DÍA QUE HAYA
+ SELECCIONADO CON LA VARIABLE "botonDias" 
+ SUME 1 DÍA MAS, O LA CANTIDAD QUE EL USUARIO
+  HAGA CLICK EN EL BOTON DE "botonAgregar"
+
+for (let i = 0; i < 10; i++) {
+  n += i;
+ mifuncion(n);
+}
+
+const agregoDia = document.querySelector("#agregoDia");
+function agregoDia(elegirDias, num2) {
+  for (let i = 0; elegirDias < num2; i++) {
+    console.log(message);
+  }
+  swal({
+  title: "Muy Bien!",
+  text: "Agregaste un nuevo día a tu viaje",
+  icon: "success",
+});
+}
+
 // ya que no cumple con la funcion de agregar de a 1 dia, 
 //segun la cantidad de veces que el usuario haga click sobre "agregar dias"
 for (let i = elegirDias; i < 10; i ++) {
  const agregarDias = document.querySelector("#agregoDia"); 
    console.log(`agregarDias: ${i}`);
  }
+
+*/
+
+//
+
+
+
+
+
+
+
 
  //ELEGIR TRANSPORTE
  const elegirTradnsporte = document.querySelector("#elegirTradnsporte");
@@ -84,7 +130,11 @@ for (let i = elegirDias; i < 10; i ++) {
 
     boton.onclick = (e)=>{
     e.preventDefault();
-    console.log("hice submit");
+    swal({
+      title: "Muy Bien!",
+      text: "Se han cargado correctamente los datos!",
+      icon: "success",
+    });
 }
 
 
