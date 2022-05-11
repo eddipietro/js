@@ -8,45 +8,76 @@ class ViajeUsuario {
 }
 
 const listaViajes = JSON.parse(localStorage.getItem("viajes")) || [];
+armoDivViajes(listaViajes);
 
-const nuevoViaje =() => {
+const boton = document.querySelector("#btn");
+//boton.addEventListener("click", nuevoViaje);
+
+
+/* boton.onclick = (e) => {    
+
+    e.preventDefault();
+    swal({
+        title: "Muy Bien!",
+        text: "Se han cargado correctamente los datos!",
+        icon: "success",
+    });
+} */
+
+
+boton.addEventListener("click", (e) => {
+
+    e.preventDefault();
+
+    //y aca haces todo lo que queres. seguramente querras llamar a la funcion nuevoViaje, para que guarde lo que puso el usuario en el local storage. y despues podes llamar al swal ahi mismo
+    nuevoViaje();
+    //aca necesitarias una funcion que tome los datos nuevos del storage y los agregue al html
+    swal({
+        title: "Muy Bien!",
+        text: "Se han cargado correctamente los datos!",
+        icon: "success",
+    });
+})
+
+function nuevoViaje() {
     let dias = document.querySelector("#botonDias").value;
     let transporte = document.querySelector("#botonTransporte").value;
     let salida = document.querySelector("#botonSalida").value;
     let destino = document.querySelector("#botonDestino").value;
 
+    let viaje = new ViajeUsuario(dias, transporte, salida, destino);
 
-let viaje = new ViajeUsuario(dias, transporte, salida, destino);
-listaViajes.push(viaje);
-localStorage.setItem("viajes", JSON.stringify(listaViajes));
+    console.log(viaje);
+
+    listaViajes.push(viaje);
+    localStorage.setItem("viajes", JSON.stringify(listaViajes));
+
+    armoDivViajes(listaViajes);
 
 }
-const boton = document.querySelector("#btn");
-boton.addEventListener("click", nuevoViaje );
 
+function armoDivViajes(lista) {
 
-boton.onclick = (e)=>{ 
-    e.preventDefault(nuevoViaje);
-    swal({
-      title: "Muy Bien!",
-      text: "Se han cargado correctamente los datos!",
-      icon: "success",
-    });    
+    let lista_viajes = document.getElementById('lista_viajes');
+
+    lista_viajes.innerHTML = '';
+
+    lista.forEach(viaje => {
+        lista_viajes.innerHTML += cardViaje(viaje);
+    });
+
 }
 
-
-boton.addEventListener("click", ()=>{
-    //y aca haces todo lo que queres. seguramente querras llamar a la funcion nuevoViaje, para que guarde lo que puso el usuario en el local storage. y despues podes llamar al swal ahi mismo
-     nuevoViaje();
-     //aca necesitarias una funcion que tome los datos nuevos del storage y los agregue al html
-     swal({
-        title: "Muy Bien!",
-        text: "Se han cargado correctamente los datos!",
-        icon: "success",
-      });
-  })
-
-
+function cardViaje(viaje) {
+    return `
+        <div class="viaje_ind">
+            <p>Origen <span id="span_origen">${viaje.salida}</span></p>
+            <p>Destino <span id="span_destino">${viaje.destino}</span></p>
+            <p>Transporte <span id="span_transporte">${viaje.transporte}</span></p>
+            <p>Días <span id="span_dias">${viaje.dias}</span></p>
+        </div>
+    `;
+}
 
 /*
 function createB() {
@@ -70,7 +101,7 @@ function createB() {
     document.getElementById("duplicate").innerHTML = "";
   }
   */
-  
+
 //if (ViajeUsuario == ("1Mes", "Avion", "cuidad de buenos aires", "tierra del fuego" )){
 //return 
 //}
