@@ -98,7 +98,7 @@ $(document).ready(function(){
 
         $(".contenido-tab > div").not(target).hide();
 
-        $(target).fadeIn(600);
+        $(target).fadeIn(600); //Muestra los elementos coincidentes desvaneciéndolos a opacos
 
     });
     

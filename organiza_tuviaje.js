@@ -1,18 +1,3 @@
-//LIBRERÍA JQUERY usando a modo de dom  con el id= input-search lupa buscadora
-let buscadora = $("#table").DataTable();
-
-$("#input-search").keyup(function(){
-    
-    buscadora.search($(this).val()).draw();
-    
-    if ($("#input-search").val() == ""){
-        $(".content-search").fadeOut(300);
-    }else{
-        $(".content-search").fadeIn(300);
-    }
-})
-
-
 const elegirDias = document.querySelector("#elegirDias");
 console.log(elegirDias);
 console.log(elegirDias.innerText);
@@ -49,12 +34,10 @@ PARA QUE A LA CANTIDAD DE DÍA QUE HAYA
  SELECCIONADO CON LA VARIABLE "botonDias" 
  SUME 1 DÍA MAS, O LA CANTIDAD QUE EL USUARIO
   HAGA CLICK EN EL BOTON DE "botonAgregar"
-
 for (let i = 0; i < 10; i++) {
   n += i;
  mifuncion(n);
 }
-
 const agregoDia = document.querySelector("#agregoDia");
 function agregoDia(elegirDias, num2) {
   for (let i = 0; elegirDias < num2; i++) {
@@ -66,14 +49,12 @@ function agregoDia(elegirDias, num2) {
   icon: "success",
 });
 }
-
 // ya que no cumple con la funcion de agregar de a 1 dia, 
 //segun la cantidad de veces que el usuario haga click sobre "agregar dias"
 for (let i = elegirDias; i < 10; i ++) {
  const agregarDias = document.querySelector("#agregoDia"); 
    console.log(`agregarDias: ${i}`);
  }
-
 */
 
 //
@@ -128,7 +109,7 @@ for (let i = elegirDias; i < 10; i ++) {
     // Boton ENVIAR
     const boton = document.querySelector("#btn");
 
-    boton.onclick = (e)=>{
+    boton.onclick = (e)=>{ 
     e.preventDefault();
     swal({
       title: "Muy Bien!",
@@ -175,13 +156,26 @@ let listaProvincias = [
 const guardarProducto = () => {
   let nombre = document.getElementById("nombre").value;
   let id = document.getElementById("id").value;
-  
 
+  //
+  const boton = document.querySelector("#botonSalida");
+
+  boton.onclick = (e)=>{
+  e.preventDefault();
+  swal({
+    title: "Muy Bien!",
+    text: "Se han cargado correctamente los datos!",
+    icon: "success",
+  });
+}
+
+  //
   let provincia = new provincias(nombre,id)
   listaProvincias.push(provincia);
 }
 
 localStorage.setItem("provincias", JSON.stringify(listaProvincias) );
+localStorage.getItem("provincias", listaProvincias);
 
 
 /*
@@ -205,3 +199,40 @@ for (let index = 0; index < 5; index++) {
   }
 }
 */
+
+
+
+
+
+class Mascota {
+  constructor(nombre, tipo, edad) {
+      this.nombre = nombre;
+      this.tipo = tipo;
+      this.edad = edad;
+  }
+}
+
+const listaMascotas = [];
+
+const nuevaMascota = () => {
+  let nombre = prompt("como se llama la mascota?");
+  let tipo = prompt("que tipo de mascota es?");
+  let edad = prompt("que edad tiene?");
+
+  let mascota = new Mascota(nombre, tipo, edad);
+  listaMascotas.push(mascota);
+  localStorage.setItem("mascotas",JSON.stringify(listaMascotas));
+   const listaNueva = JSON.parse(localStorage.getItem("mascotas"));
+   listaNueva.push(mascota);
+   localStorage.setItem("mascotas", JSON.stringify(listaNueva));
+
+   if(localStorage.getItem("mascotas") == null ) {
+       listaMascotas.push(mascota);
+       localStorage.setItem("mascotas",JSON.stringify(listaMascotas));
+   } else {
+       const listaNueva = JSON.parse(localStorage.getItem("mascotas"));
+       listaNueva.push(mascota);
+       localStorage.setItem("mascotas", JSON.stringify(listaNueva));
+   }
+
+}

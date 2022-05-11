@@ -181,7 +181,7 @@
           <h2 class="animate__animated animate__fadeInLeftBig">1 PERSONA</h2>
           <h3 class="persona" id="elegirDias">Elegir Días <img src="https://img.icons8.com/small/32/000000/calendar-27.png"/></h3>
           <select class="imput" name="dias" id="botonDias"  >
-            <option value="Elija Cantidad de Dias">Elija La Cantidad de Días</option>
+            <option selected="true" disabled="disabled">Elija la cantidad de días</option>
             <option value="Fin De Semana">Fin de Semana</option>
             <option value="1 Semana">1 Semana</option>
             <option value="15 Dias">15 Días</option>
@@ -189,8 +189,7 @@
           </select>
 
 
-          <button type="button" class="btn btn-outline-light me-2" id="agregoDia"> Agregar Días<img src="https://img.icons8.com/small/32/000000/add.png"/></button> 
-
+         
 
           <h3 class="persona " id="elegirTradnsporte">Elegir Transporte <img src="https://img.icons8.com/small/32/000000/airplane-take-off.png"/></h3>
           <select class="imput" name="transporte" id="botonTransporte" >
@@ -253,11 +252,10 @@
           </select>
           
           <div>
-          <input class="btn btn-outline-light me-2 enviar" type="submit" value="Enviar" id="btn">
+          <input  class="btn btn-outline-light me-2 enviar"  type="submit" value="Enviar"  id="btn" >
           </div>
         </form>
-        
-        
+                        
           <h3 class="persona">Las opciones de viajes que le recomendamos nosotros segun sus filtros</h3>
           </section>
       </main>
@@ -283,7 +281,8 @@
         <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
         <script src="https://cdn.datatables.net/v/dt/dt-1.10.15/datatables.min.js"></script>
           <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-          <script src="../organiza_tuviaje.js"></script>
+          <script src="../main.js"></script>
+          <script src="../organiza.js"></script>
     </body>
 
 </html>
