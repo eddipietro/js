@@ -47,7 +47,7 @@ function nuevoViaje() {
 
     let viaje = new ViajeUsuario(dias, transporte, salida, destino);
 
-    console.log(viaje);
+    //console.log(viaje);
 
     listaViajes.push(viaje);
     localStorage.setItem("viajes", JSON.stringify(listaViajes));
