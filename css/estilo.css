@@ -375,6 +375,10 @@ tbody tr td a:hover {
 
 /*TICKET PASAJE*/
 
+#section {
+height: 10%;
+width: 20%;
+}
 
 
 .box {
