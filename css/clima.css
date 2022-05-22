@@ -50,7 +50,7 @@
   
   body {
     font: 1rem/1.3 "Roboto", sans-serif;
-    background: #04619f;
+    background: #00B6B6;
     color: var(--text_dark);
     padding: 70px;
   }
@@ -256,3 +256,15 @@
   .api a:hover {
     text-decoration: none;
   }
+
+  .logomenu {
+    margin-top: 5%;
+    margin-left: 5%;
+    margin-bottom: 1%;
+    box-shadow: 10px 5px 5px black;
+    border-radius: 50%;
+}
+.volver {
+  color: #fff;
+    margin-left: 5%;
+}
