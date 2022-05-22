@@ -9,7 +9,7 @@
     <meta name="description" content="Organiza el viaje de mochilero y solo para desconectar de forma rapida facil y divertida, nosotros te ayudamos ">
     <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/estilo.css">
+        <link rel="stylesheet" href="../css/organiza.css">
    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <title>Grupo 1 Solo FlyNow</title>
@@ -18,272 +18,129 @@
 <body>
 
     <!--HEADER-->
-    <header>
-        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark colorNav">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="../index.html"><img class="logo" src="../img/logoflynow.png" width="80px" height="80px" alt="logo de inicio"></a>
-                <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap">
-          <use xlink:href="#bootstrap" />
-        </svg>
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-                <div class="collapse navbar-collapse" id="navbarCollapse">
-                    <ul class="navbar-nav me-auto mb-2 mb-md-0">
-                        <li class="nav-item">
-                            <a href="../dondeir/dondeir.html" class=" nav-link px-2 text-white ">DONDE IR</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="../organiza/organizatuviaje.html" class="nav-link px-2 text-white">ORGANIZÁ TU VIAJE</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="../clima/clima.html" class="nav-link px-2 text-white">CLIMA</a>
-                          </li>
-                        <li class="nav-item">
-                            <a href="../footer/nosotros.html" class="nav-link px-2 text-white">NOSOTROS</a>
-                        </li>
-                    </ul>
-                    <form class="d-flex">
-                        <!--LIBRERÍA JQUERY usando a modo de dom  con el id= input-search-->
-                        <input type="search" id="input-search" placeholder="Buscar aqui">
-
-                        <div class="content-search">
-                            <div class="content-table">
-                                <table id="table">
-                                    <thead>
-                                        <tr>
-                                            <td></td>
-                                        </tr>
-                                    </thead>
-
-                                    <tbody>
-                                        <tr>
-                                            <td><a href="../dondeir/dondeir.html">Centro</a></td>
-                                        </tr>
-
-                                        <tr>
-                                            <td><a href="../dondeir/dondeir.html">Litoral</a></td>
-                                        </tr>
-
-                                        <tr>
-                                            <td><a href="../dondeir/dondeir.html">Norte</a></td>
-                                        </tr>
-
-                                        <tr>
-                                            <td><a href="../dondeir/dondeir.html">Cuyo</a></td>
-                                        </tr>
-
-                                        <tr>
-                                            <td><a href="../dondeir/dondeir.html">Patagonia</a></td>
-                                        </tr>
-
-                                        <tr>
-                                            <td><a href="../dondeir/buenosaires.html">Ciudad de Buenos Aires</a></td>
-                                        </tr>
-
-                                        <tr>
-                                            <td><a href="../dondeir/catamarca.html">Catamarca</a></td>
-                                        </tr>
-
-                                        <tr>
-                                            <td><a href="../dondeir/chaco.html">Chaco</a></td>
-                                        </tr>
-
-                                        <tr>
-                                            <td><a href="../dondeir/cordoba.html">Cordoba</a></td>
-                                        </tr>
-
-                                        <tr>
-                                            <td><a href="../dondeir/corrientes.html">Corrientes</a></td>
-                                        </tr>
-
-                                        <tr>
-                                            <td><a href="../dondeir/chubut.html">Chubut</a></td>
-                                        </tr>
-
-                                        <tr>
-                                            <td><a href="../dondeir/formosa.html">Formosa</a></td>
-                                        </tr>
-
-                                        <tr>
-                                            <td><a href="../dondeir/jujuy.html">Jujuy</a></td>
-                                        </tr>
-
-                                        <tr>
-                                            <td><a href="../dondeir/lapampa.html">La Pampa</a></td>
-                                        </tr>
-
-                                        <tr>
-                                            <td><a href="../dondeir/larioja.html">La Rioja</a></td>
-                                        </tr>
-
-                                        <tr>
-                                            <td><a href="../dondeir/mendoza.html">Mendoza</a></td>
-                                        </tr>
-
-                                        <tr>
-                                            <td><a href="../dondeir/misiones.html">Misiones</a></td>
-                                        </tr>
-
-                                        <tr>
-                                            <td><a href="../dondeir/neuquen.html">Neuquen</a></td>
-                                        </tr>
-
-                                        <tr>
-                                            <td><a href="../dondeir/rionegro.html">Rio Negro</a></td>
-                                        </tr>
-
-                                        <tr>
-                                            <td><a href="../dondeir/salta.html">Salta</a></td>
-                                        </tr>
-
-                                        <tr>
-                                            <td><a href="../dondeir/sanjuan.html">San Juan</a></td>
-                                        </tr>
-
-                                        <tr>
-                                            <td><a href="../dondeir/sanluis.html">San Luis</a></td>
-                                        </tr>
-
-                                        <tr>
-                                            <td><a href="../dondeir/santacruz.html">Santa Cruz</a></td>
-                                        </tr>
-
-                                        <tr>
-                                            <td><a href="../dondeir/santafe.html">Santa Fe</a></td>
-                                        </tr>
-
-                                        <tr>
-                                            <td><a href="../dondeir/santiagodelestero.html">Santiago del Estero</a></td>
-                                        </tr>
-
-                                        <tr>
-                                            <td><a href="../dondeir/tierradelfuego.htlm.html">Tierra del Fuego</a></td>
-                                        </tr>
-
-                                        <tr>
-                                            <td><a href="../dondeir/tucuman.html">Tucuman</a></td>
-                                        </tr>
-
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
-                        <button type="button" class="btn btn-outline-light me-2"> <a href="../menu/iniciar.html"> Login</a></button>
-                    </form>
-                </div>
-            </div>
-        </nav>
-    </header>
-
+    
+    <a class="navbar-brand" href="../index.html"><img class="logomenu" src="../img/logoflynow.png" width="100px"
+        height="100px" alt="logo de inicio"></a>
+        <p class="volver"> ←volver al menu principal</p>              
     <!--MAIN-->
-    <main class="container-fluid">
-        <h1 class="animate__animated animate__pulse">Los Mejores destinos se encuentran en Argentina</h1>
-
-        <form id="enviar" action="">
-            <section class="container-fluid">
-                <h2 class="animate__animated animate__fadeInLeftBig">1 PERSONA</h2>
-                <h3 class="persona" id="elegirDias">Elegir Días <img src="https://img.icons8.com/small/32/000000/calendar-27.png" /></h3>
-                <select class="imput" name="dias" id="botonDias">
-          <option selected="true" disabled="disabled">Elija la cantidad de días</option>
-          <option value="Fin De Semana">Fin de Semana</option>
-          <option value="1 Semana">1 Semana</option>
-          <option value="15 Dias">15 Días</option>
-          <option value="1 Mes">1 Mes</option>
-        </select>
-
-                <h3 class="persona " id="elegirTradnsporte">Elegir Transporte <img src="https://img.icons8.com/small/32/000000/airplane-take-off.png" /></h3>
-                <select class="imput" name="transporte" id="botonTransporte">
-          <option value="Elija Transporte">Elija Transporte</option>
-          <option value="Micro">Micro</option>
-          <option value="Tren">Tren</option>
-          <option value="Avion">Avion</option>
-        </select>
-                <h3 class="persona" id="elegirSalida">Salida <img src="https://img.icons8.com/ios/32/000000/passenger-with-baggage.png" /></h3>
-                <select class="imput" name="salida" id="botonSalida">
-          <option value="Elija Salida">Elija Salida</option>
-          <option class="fondito" value="Ciudad de Buenos Aires" id="1">Ciudad de Buenos Aires</option>
-          <option value="Catamarca" id="2">Catamarca</option>
-          <option value="Chaco" id="3">Chaco</option>
-          <option value="Córdoba" id="4">Córdoba</option>
-          <option value="Corrientes" id="5">Corrientes</option>
-          <option value="Entre Ríos" id="6">Entre Ríos</option>
-          <option value="Formosa" id="7">Formosa</option>
-          <option value="Jujuy" id="8">Jujuy</option>
-          <option value="La Pampa" id="9">La Pampa</option>
-          <option value="La Rioja" id="10">La Rioja</option>
-          <option value="Mendoza" id="11">Mendoza</option>
-          <option value="Misiones" id="12">Misiones</option>
-          <option value="Neuquén" id="13">Neuquén</option>
-          <option value="Río Negro" id="14">Río Negro</option>
-          <option value="Salta" id="15">Salta</option>
-          <option value="San Juan" id="16">San Juan</option>
-          <option value="San Luis" id="17">San Luis</option>
-          <option value="Santa Cruz" id="18">Santa Cruz</option>
-          <option value="Santa Fé" id="19">Santa Fe</option>
-          <option value="Santiago del Estero" id="20">Santiago del Estero</option>
-          <option value="Tierra del Fuego" id="21">Tierra del Fuego</option>
-          <option value="Tucumán" id="22">Tucumán</option>
-        </select>
-                <h3 class="persona" id="elegirDestino">Destinos <img src="https://img.icons8.com/ios/32/000000/sunbathe.png" />
-                </h3>
-                <select class="imput" name="destinos" id="botonDestino">
-          <option value="Elija Destino">Elija Destino</option>
-          <option value="Ciudad de Buenos Aires">Ciudad de Buenos Aires</option>
-          <option value="Catamarca">Catamarca</option>
-          <option value="Chaco">Chaco</option>
-          <option value="Córdoba">Córdoba</option>
-          <option value="Corrientes">Corrientes</option>
-          <option value="Entre Ríos">Entre Ríos</option>
-          <option value="Formosa">Formosa</option>
-          <option value="Jujuy">Jujuy</option>
-          <option value="La Pampa">La Pampa</option>
-          <option value="La Rioja">La Rioja</option>
-          <option value="Mendoza">Mendoza</option>
-          <option value="Misiones">Misiones</option>
-          <option value="Neuquén">Neuquén</option>
-          <option value="Río Negro">Río Negro</option>
-          <option value="Salta">Salta</option>
-          <option value="San Juan">San Juan</option>
-          <option value="San Luis">San Luis</option>
-          <option value="Santa Cruz">Santa Cruz</option>
-          <option value="Santa Fé">Santa Fe</option>
-          <option value="Santiago del Estero">Santiago del Estero</option>
-          <option value="Tierra  del Fuego">Tierra del Fuego</option>
-          <option value="Tucumán">Tucumán</option>
-        </select>
-
-                <div>
-                    <input class="btn btn-outline-light me-2 enviar" type="submit" value="Enviar" id="btn">
+    <main>
+        <div id="page1">
+        
+            <img alt="plane" class="avion" src="https://i.ibb.co/52bG3RC/landingpage-assets-0005-plane.png">
+              
+               
+             <div class="right">
+              
+               <h1 class="travel">Viajamos juntos</h1>
+               
+                             <form class="reservation">   
+                <fieldset>
+                    <div>
+                        <label>Salida</label>
+                        <input list="salida" id="salida-nombre" name="salida-nombre" />
+               
+               <datalist id="salida">
+                    <option value="Ciudad de Buenos Aires">
+                    <option value="Catamarca">
+                    <option value="Chaco">
+                    <option value="Córdoba">
+                    <option value="Corrientes">
+                    <option value="Entre Ríos">
+                    <option value="Formosa">
+                    <option value="Jujuy">
+                    <option value="La Pampa">
+                    <option value="La Rioja">
+                    <option value="Mendoza">
+                    <option value="Misiones">
+                    <option value="Neuquén">
+                    <option value="Río Negro">
+                    <option value="Salta">
+                    <option value="San Juan">
+                    <option value="San Luis">
+                    <option value="Santa Cruz">
+                    <option value="Santa Fé">
+                    <option value="Santiago del Estero">
+                    <option value="Tierra  del Fuego">
+                    <option value="Tucumán">   
+               </datalist>
+                   </div>
+    
+    
+                         <div>
+                            <label>DESTINO</label>
+                            <input list="destino" id="destino-nombre" name="destino-nombre" />
+                   
+                   <datalist id="destino">
+                        <option value="Ciudad de Buenos Aires">
+                        <option value="Catamarca">
+                        <option value="Chaco">
+                        <option value="Córdoba">
+                        <option value="Corrientes">
+                        <option value="Entre Ríos">
+                        <option value="Formosa">
+                        <option value="Jujuy">
+                        <option value="La Pampa">
+                        <option value="La Rioja">
+                        <option value="Mendoza">
+                        <option value="Misiones">
+                        <option value="Neuquén">
+                        <option value="Río Negro">
+                        <option value="Salta">
+                        <option value="San Juan">
+                        <option value="San Luis">
+                        <option value="Santa Cruz">
+                        <option value="Santa Fé">
+                        <option value="Santiago del Estero">
+                        <option value="Tierra  del Fuego">
+                        <option value="Tucumán">  
+                   </datalist>
+                       </div>
+                  
+                  <div class="left2">
+                   <label>INGRESE SALIDA</label>
+                   <input type="date" id="start" name="trip"
+                          value="2022-05-30"
+                          min="2022-05-30" max="2030-12-31" />
+                    
+                    <label>ADULTOS</label>
+                    <input list="adults" id="adults-number" name="adults-number" />
+           
+           <datalist id="adults">
+               <option value="1 adulto">
+               <option value="2 adultos">
+               <option value="3 adultos">
+               <option value="+3 adultos">
+           </datalist>
+               </div>
+           
+               <div class ="right2">
+                   <label>IGRESE DESTINO</label>
+                   <input type="date" id="end" name="trip"
+                   value="2022-06-01"
+                   min="2022-05-30" max="2030-12-31" />
+                 <label>Menores</label>
+                 <input list="children" id="children-number" name="children-number" />
+           
+           <datalist id="children">
+               <option value="Sin Menores">
+               <option value="1">
+               <option value="2">
+               <option value="3">
+           </datalist>
+               </div>
+                  
+                 <div class="button">
+                  <input type="button" class="btn" value="ENVIAR" /></div>
+                  
+              </fieldset></form>
+             </div>
                 </div>
-        </form>
+                <div id="lista_viajes">
+                    <!-- Cargo la lista desde el archivo organiza.js -->
+                </div>
+            </main>
 
-
-        <div id="lista_viajes">
-            <!-- Cargo la lista desde el archivo organiza.js -->
-        </div>
-    </main>
-
-    <!--FOOTER-->
-    <footer class="py-3 my-4">
-        <a href="../index.html" id="subir" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
-            <img class="logo" src="../img/logoflynow.png" width="120" alt="logo">
-        </a>
-        <ul class="nav justify-content-center border-bottom pb-3 mb-3">
-            <li class="nav-item">
-                <a href="http://www.instagram.com" class="nav-link px-2 text-muted"><img class="logo" width="38" src="../img/instagram.png" alt="instagram"></a>
-            </li>
-            <li class="nav-item">
-                <a href="http://www.facebook.com" class="nav-link px-2 text-muted"><img class="logo" width="37" src="../img/face.png" alt="facebook"></a>
-            </li>
-        </ul>
-
-        <p class="text-center text-muted"><a href="../footer/infogeneral.html" class="nav-link px-2 text-muted">Términos y
-        Condiciones</a></p>
-
-        <p class="text-center text-muted">&copy; 2021 Company, Inc</p>
-    </footer>
+   
 
 
 
