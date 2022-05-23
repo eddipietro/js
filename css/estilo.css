@@ -299,7 +299,9 @@ p {
     height: 100vh;
     position: fixed;
     top: 60px;
-    left: 0;
+    left: 70%;
+    font-size: 25px;
+    font-weight: bold;
     background: rgba(0, 0, 0, 0.3);
     display: none;
 }

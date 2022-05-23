@@ -15,7 +15,7 @@ $("#input-search").keyup(function(){
 
 //FETCH 1
 
-let boton = document.querySelector("#btn");
+let button = document.querySelector("#btn");
 const container = document.querySelector(".container");
 
 //const obtenerDatos = ()=>{
@@ -45,8 +45,6 @@ const obtenerDatos = ()=>{
         .catch(error => console.log(error))
 }
 
-boton.onclick = () =>{
-    obtenerDatos();
-}
+
 
 
