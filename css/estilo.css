@@ -784,3 +784,12 @@ width: 20%;
   .airlineslip {
     left: 440px;
   }
+  #color {
+    font-weight: bold;
+    color: #FFFFFF;
+    text-decoration: none;
+    
+  }
+  #color:hover {
+    color: #536cc0;
+  }

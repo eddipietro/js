@@ -27,7 +27,7 @@ $(document).ready(function(){
                 label.addClass("highlight");
             }
         }
-
+       
     });
 
     $(".tab a").on("click", function (e) {
@@ -42,7 +42,7 @@ $(document).ready(function(){
         $(".contenido-tab > div").not(target).hide();
 
         $(target).fadeIn(600); //Muestra los elementos coincidentes desvaneciéndolos de a paco
-
+     
     });
     
 });

@@ -20,7 +20,7 @@ boton.addEventListener("click", (e) => {
   e.preventDefault(e);
  
   //y aca haces todo lo que queres. seguramente querras llamar a la funcion nuevoViaje, para que guarde lo que puso el usuario en el local storage. y despues podes llamar al swal ahi mismo
-
+ 
   nuevoViaje();
   
   //aca necesitarias una funcion que tome los datos nuevos del storage y los agregue al html
@@ -48,8 +48,12 @@ function nuevoViaje() {
       icon: "success",
   });
   } else {
-     alert("ERROR: ES NECESARIO CARGAR TODOS LOS PRODUCTOS");
-     nuevoViaje();
+    swal({
+      title: "ERROR!",
+      text: "No se han cargado todos los campos obligatorios!",
+      icon: "warning",
+  });
+       nuevoViaje();
   }
   
 
